@@ -1,0 +1,3 @@
+(todate(t_1.RKDATE) >= (todate(substr(parameter('startbilldate'),1,10))))
+
+(todatetime(t_1.RKDATE) <= todatetime(tostring(substr(parameter('endbilldate'),1,10)) || ' 23:59:59'))
